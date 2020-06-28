@@ -10,7 +10,7 @@ function Input(props) {
 
   return (
     <div className="form">
-      <input onChange={handleChange} type="text" value={inputText} />
+      <input onChange={handleChange} type="text" value={inputText} required />
       <button
         onClick={() => {
           props.addText(inputText);
